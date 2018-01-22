@@ -1,4 +1,7 @@
-<ul>
-  <li>List #1</li>
-  <li>list #2</li>
-</ul>
+<div class="container-fluid">
+  <p>These are jobs at startups that were funded by Y Combinator. You can apply to many at once through <a href="https://www.workatastartup.com/">Work at a Startup</a> or <a href="https://triplebyte.com/?ref=yc_jobs">Triplebyte.</a></p>
+
+  <p *ngFor="let job of jobs"><a href="{{job.jobURL}}">{{job.jobTitle}}</a> {{job.jobSource}}<br>
+    {{job.jobTimestamp}}</p>
+
+</div>
